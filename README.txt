@@ -52,8 +52,9 @@ as fast as feasible.
 
 CODE INFRASTRUCTURE
 
-GENIE Unit Test Suite cirrently resides in
-https://github.com/yarba/GENIE_UnitTests
+GENIE Unit Test Suite cirrently resides in https://github.com/GENIE-MC/UnitTests
+
+NOTE: that this is public repository.
 
 In order to detect failures and/or deviation from expected and/or to report seccessfull completion, 
 GENIE Unit Test Suite is using features of  the boost unit testing framework: 
@@ -117,15 +118,11 @@ external packages.
 
 If you wish to check out public revision of GENIE (incl. trunk) with read-only access, please do:
 
- svn co --quiet http://genie.hepforge.org/svn/generator/trunk <your-genie-area>
+git clone git@github.com:GENIE-MC/Generator.git <your-genie-area>
 
-If you need read-write SVN access to the GENIE core code (password required), please do:
+NOTE-1: If you don't specify <your-genie-area>, the code will be checked out into (sub)directory Generator.
 
- svn co --username <you-user-rname> https://genie.hepforge.org/svn/generator/trunk <your-genie-area>
- 
-If you need to work out of a specific development/feature branch, you should check out such branch:
-
- svn co --username <your-user-name> https://genie.hepforge.org/svn/generator/devel/branches/<branch-name> <your-genie-area>
+NOTE-2: Due to migration from HepForge/SVN to GitHub, port of development/feature branches is still in progress.
 
 To build GENIE:
 
@@ -178,15 +175,15 @@ Obtain GENIE Unit Tests Suite:
 The easiest way to get started is to clone the Suite from GitHub:
 
  cd <your-work-area>
- git clone https://github.com/yarba/GENIE_UnitTests.git
+ git clone  git@github.com:GENIE-MC/UnitTests.git
 
-NOTE: in principle, for future development it may be more practical to fork Git GENIE_UnitTest
+NOTE: in principle, for future development it may be more practical to fork UnitTests
 repository, do all the development there, then initiate a Git pull request to have updates
 megred into the main branch.
 
 To build the Unit Tests Suite, go to the GENIE_UnitTests/src directory and eecure "make":
 
- cd GENIE_UnitTests/src
+ cd UnitTests/src
  make
 
 To run the suite, do the following:
