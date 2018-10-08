@@ -163,6 +163,32 @@ Extend LD_LIBRARY_PATH and PATH:
 
  LD_LIBRARY_PATH=$GENIE/lib:$LD_LIBRARY_PATH
  PATH=$GENIE/bin:$PATH
+ 
+ 
+Now you need to build Reweight package.
+
+BEAR IN MIND THAT STARTING OCT.2018 Tools/ReWeight PACKAGE HAS MOVED OUT OF GENIE (Generator)
+INTO ITS OWN REPOSITORY Reweight.
+
+git clone git@github.com:GENIE-MC/Reweight.git <your-genie-RW-area>
+
+NOTE-3: If you don't specify <your-genie-RW-area>, the code will be checked out into (sub)directory Reweight.
+
+
+cd <your-genie-RW-area>
+
+Setup mandatory GENIE_REWEIGHT environment variable :
+
+ GENIE_REWEIGHT=$PWD
+
+Build Reweight:
+
+  make
+  
+Extend LD_LIBRARY_PATH and PATH to include RW libraries and executables:
+
+ LD_LIBRARY_PATH=$GENIE_REWEIGHT/lib:$LD_LIBRARY_PATH
+ PATH=$GENIE_REWEIGHT/bin:$PATH
 
 
 In order to build GENIE_UnitTests you'll also need boost packakge wichi is also centrally
