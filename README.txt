@@ -92,11 +92,16 @@ external packages.
 
 If you wish to check out public revision of GENIE (incl. trunk) with read-only access, please do:
 
-git clone git@github.com:GENIE-MC/Generator.git <your-genie-area>
+ git clone git@github.com:GENIE-MC/Generator.git <your-genie-area>
 
-NOTE-1: If you don't specify <your-genie-area>, the code will be checked out into (sub)directory Generator.
+NOTE-1: In some cases "git clone" as shown will NOT work properly (ssh specifics or whatever reason).
+As an alternative, one may try as follows:
+  git clone https://git@github.com/GENIE-MC/Generator.git <your-genie-area>
 
-NOTE-2: Due to migration from HepForge/SVN to GitHub, port of development/feature branches is still in progress.
+
+NOTE-2: If you don't specify <your-genie-area>, the code will be checked out into (sub)directory Generator.
+
+NOTE-3: Due to migration from HepForge/SVN to GitHub, port of development/feature branches is still in progress.
 
 To build GENIE:
 
@@ -144,12 +149,16 @@ Now you need to build Reweight package.
 BEAR IN MIND THAT STARTING OCT.2018 Tools/ReWeight PACKAGE HAS MOVED OUT OF GENIE (Generator)
 INTO ITS OWN REPOSITORY Reweight.
 
-git clone git@github.com:GENIE-MC/Reweight.git <your-genie-RW-area>
+ git clone git@github.com:GENIE-MC/Reweight.git <your-genie-RW-area>
 
-NOTE-3: If you don't specify <your-genie-RW-area>, the code will be checked out into (sub)directory Reweight.
+NOTE-4: As already mentioned earlier, in some cases "git clone" will NOT work as shon above.
+Alternative was is the following:
+  git clone https://git@github.com/GENIE-MC/Reweight.git <your-genie-RW-area>
+
+NOTE-5: If you don't specify <your-genie-RW-area>, the code will be checked out into (sub)directory Reweight.
 
 
-cd <your-genie-RW-area>
+ cd <your-genie-RW-area>
 
 Setup mandatory GENIE_REWEIGHT environment variable :
 
@@ -175,8 +184,12 @@ The easiest way to get started is to clone the Suite from GitHub:
 
  cd <your-work-area>
  git clone  git@github.com:GENIE-MC/UnitTests.git
+ 
+NOTE-6: As already mentioned earlier, in some cases "git clone" will NOT work as shon above.
+Alternative was is the following:
+  git clone https://git@github.com/GENIE-MC/UnitTests.git 
 
-NOTE: in principle, for future development it may be more practical to fork UnitTests
+NOTE-7: in principle, for future development it may be more practical to fork UnitTests
 repository, do all the development there, then initiate a Git pull request to have updates
 megred into the main branch.
 
