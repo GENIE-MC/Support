@@ -56,8 +56,6 @@ int main( void )
    
    AlgConfigPool* conf_pool = AlgConfigPool::Instance();
 
-// --->   return 0;
-   
    Registry* gpl  = conf_pool->GlobalParameterList();
    
    gpl->Print( cout );
