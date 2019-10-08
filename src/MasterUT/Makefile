@@ -13,9 +13,9 @@ include $(GENIE)/src/make/Make.include
 
 #INCLUDES += -I$(BOOST_INC)
 ifdef CPP_INCLUDES
-INCLUDES := $(CPP_INCLUDES) -I$(BOOST_INC)
+INCLUDES := $(CPP_INCLUDES) -I$(BOOST_INC) -I../SynthEvent
 else
-INCLUDES := $(INCLUDES) -I$(BOOST_INC)
+INCLUDES := $(INCLUDES) -I$(BOOST_INC) -I../SynthEvent
 endif
 
 # Add extra libraries needed for these executables
@@ -26,7 +26,7 @@ LIBRARIES := $(GENIE_GENERATOR_LIBS) $(GENIE_RW_LIBS) $(LIBRARIES)
 
 UT_SRC := $(wildcard *.cxx)
 UT_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(UT_SRC))) 
-EXTRA_SRC = $(wildcard ../XSecUT/*.cxx ../ReWeiUT/*.cxx)
+EXTRA_SRC = $(wildcard ../XSecUT/*.cxx ../ReWeiUT/*.cxx ../SynthEvent/*.cxx)
 EXTRA_OBJ = $(addsuffix .$(ObjSuf), $(basename $(EXTRA_SRC)))
 
 all: master_ut 
