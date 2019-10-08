@@ -23,7 +23,8 @@ void rw_XSecCOH_ut()
    // NOTE: Basically, RgAlg is just a "pair" of strings (but not an std::pair),
    // i.e. algorithm's name (e.g. Lwlyn...) and configuration (e.g. Dipole)
    //
-   RgAlg xsec_alg = gpl->GetAlg("XSecModel@genie::EventGenerator/COH-CC");
+// -->    RgAlg xsec_alg = gpl->GetAlg("XSecModel@genie::EventGenerator/COH-CC");
+   RgAlg xsec_alg = gpl->GetAlg("XSecModel@genie::EventGenerator/COH-CC-PION");
   
    AlgId id(xsec_alg);
 
