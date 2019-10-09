@@ -1,7 +1,7 @@
 #
 # GENIE-UT Makefile 
 #
-# Author: Julia Yarba, Fermilab 
+# Author: Julia Yarba, Fermilab
 #
 
 SHELL = /bin/sh
@@ -10,6 +10,8 @@ MAKEFILE = Makefile
 
 # Include machine specific flags and locations (inc. files & libs)
 include $(GENIE)/src/make/Make.include
+
+LIBNAME = libCoherentXSecUT
 
 #INCLUDES += -I$(BOOST_INC)
 ifdef CPP_INCLUDES
@@ -20,20 +22,16 @@ endif
 
 # Add extra libraries needed for these executables
 GENIE_GENERATOR_LIBS   = $(shell $(GENIE)/src/scripts/setup/genie-config --libs)
-GENIE_RW_LIBS = $(shell $(GENIE_REWEIGHT)/src/scripts/setup/genie-reweight-config --libs)
 BOOST_UT_LIBS = -L$(BOOST_LIB) -lboost_unit_test_framework
-LIBRARIES := $(GENIE_GENERATOR_LIBS) $(GENIE_RW_LIBS) $(LIBRARIES)  
+LIBRARIES := $(GENIE_GENERATOR_LIBS)  $(LIBRARIES)
 
-UT_SRC := $(wildcard *.cxx)
-UT_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(UT_SRC))) 
-EXTRA_SRC = $(wildcard ../CoherentXSecUT/*.cxx ../XSecUT/*.cxx ../ReWeiUT/*.cxx ../SynthEvent/*.cxx)
-EXTRA_OBJ = $(addsuffix .$(ObjSuf), $(basename $(EXTRA_SRC)))
+XS_SOURCES := $(wildcard *.cxx)
+XS_OBJECTS    = $(addsuffix .$(ObjSuf), $(basename $(XS_SOURCES)))
 
-all: master_ut 
+all: coh_xsec_ut 
 
-master_ut: FORCE
-	$(CXX) $(CXXFLAGS) -c $(UT_SRC) $(INCLUDES) 
-	$(LD) $(LDFLAGS) $(UT_OBJ) $(EXTRA_OBJ) $(LIBRARIES) $(BOOST_UT_LIBS) -o master_ut 
+coh_xsec_ut: FORCE
+	$(CXX) $(CXXFLAGS) -c $(XS_SOURCES) $(INCLUDES) 
 
 
 purge: FORCE
@@ -41,7 +39,6 @@ purge: FORCE
 
 clean: FORCE
 	$(RM) *.o *~ core 
-	$(RM) master_ut
 
 
 FORCE:

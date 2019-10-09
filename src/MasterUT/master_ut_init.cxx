@@ -21,19 +21,23 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts1->add( BOOST_TEST_CASE( &lwlyn_ut ) );
    ts1->add( BOOST_TEST_CASE( &nieves_ut ) );
    ts1->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number
-                                                                    // needs further understanding...
+                                                  // needs further understanding...
+   
+   auto ts2 = BOOST_TEST_SUITE("COHXSec");
+   ts2->add( BOOST_TEST_CASE( &reinsehgal_ut ) );
 
-   auto ts2 = BOOST_TEST_SUITE("ReWei");
-   ts2->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
-   ts2->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
-   ts2->add( BOOST_TEST_CASE( &rw_XSecCCRES_ut ) );
-   ts2->add( BOOST_TEST_CASE( &rw_XSecNCRES_ut ) );
-   ts2->add( BOOST_TEST_CASE( &rw_XSecCOH_ut ) );
+   auto ts3 = BOOST_TEST_SUITE("ReWei");
+   ts3->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
+   ts3->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
+   ts3->add( BOOST_TEST_CASE( &rw_XSecCCRES_ut ) );
+   ts3->add( BOOST_TEST_CASE( &rw_XSecNCRES_ut ) );
+   ts3->add( BOOST_TEST_CASE( &rw_XSecCOH_ut ) );
 
    // add other tests suites here...
 
    framework::master_test_suite().add(ts1);
    framework::master_test_suite().add(ts2);
+   framework::master_test_suite().add(ts3);
 
    return true;
 
