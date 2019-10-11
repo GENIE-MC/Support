@@ -37,8 +37,6 @@ using namespace boost::unit_test;
 void lwlyn_ut()
 {
       
-   double tolerance_in_percent = 0.001;
-  
    // Carbon target nucleus + nu_mu projectile (probe)
    //
    InitialState istate( 6, 12, 14 );
@@ -92,7 +90,8 @@ void lwlyn_ut()
    BOOST_REQUIRE_NE( xsec, 0. );
    
    // BOOST_CHECK_CLOSE( xsec, 9.08713e-12, tolerance_in_percent ); // as ov GENIE v2.x.x-series
-   BOOST_CHECK_CLOSE( xsec, 9.11463e-12, tolerance_in_percent ); // going towards GENIE v3-series
+//   BOOST_CHECK_CLOSE( xsec, 9.11463e-12, tolerance_in_percent ); // going towards GENIE v3-series
+   BOOST_CHECK_CLOSE( xsec, cc_xsec::lwlyn::xsec_default, tolerance_in_percent ); // going towards GENIE v3-series
    
    //
    // JY: this one below will artificially emulate an error ^_^

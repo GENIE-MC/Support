@@ -1,7 +1,5 @@
 
-#include <boost/test/unit_test.hpp>
-#include <boost/test/framework.hpp>
-#include <boost/test/unit_test_suite.hpp>
+#include "BoostUtils.h"
 
 #include "ExternalFunctions.h"
 
@@ -15,10 +13,11 @@ using namespace boost::unit_test;
 	 */
 bool init_unit_test_suite( /* int argc, char *argv[] */ )
 {
-
+      
    auto ts1 = BOOST_TEST_SUITE("XSec");
-
+   
    ts1->add( BOOST_TEST_CASE( &lwlyn_ut ) );
+      
    ts1->add( BOOST_TEST_CASE( &nieves_ut ) );
    ts1->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number
                                                   // needs further understanding...

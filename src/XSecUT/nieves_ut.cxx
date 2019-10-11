@@ -12,8 +12,6 @@ using namespace boost::unit_test;
 void nieves_ut()
 {
 
-   double tolerance_in_percent = 0.001;
-
    // this part below is identical between lwlyn and niev !!!
    //
    InitialState istate( 6, 12, 14 ); // tgt=Carbon, projectile=nu_mu
@@ -58,7 +56,8 @@ void nieves_ut()
    BOOST_REQUIRE_NE( xsec, 0. );
 
    // this is for "ZExp", towards v3-series
-   BOOST_CHECK_CLOSE( xsec, 1.738095e-11, tolerance_in_percent );
+//   BOOST_CHECK_CLOSE( xsec, 1.738095e-11, tolerance_in_percent );
+   BOOST_CHECK_CLOSE( xsec, cc_xsec::nieves::xsec_default, tolerance_in_percent );
 
    return;
 }

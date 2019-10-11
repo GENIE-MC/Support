@@ -13,9 +13,9 @@ include $(GENIE)/src/make/Make.include
 
 #INCLUDES += -I$(BOOST_INC)
 ifdef CPP_INCLUDES
-INCLUDES := $(CPP_INCLUDES) -I$(BOOST_INC) -I../SynthEvent
+INCLUDES := $(CPP_INCLUDES) -I$(BOOST_INC) -I../Common -I../SynthEvent
 else
-INCLUDES := $(INCLUDES) -I$(BOOST_INC) -I../SynthEvent
+INCLUDES := $(INCLUDES) -I$(BOOST_INC) -I../Common -I../SynthEvent
 endif
 
 # Add extra libraries needed for these executables

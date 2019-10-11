@@ -1,5 +1,10 @@
 
-#include "CommonCOHXSec.h"
+// #include "CommonCOHXSec.h"
+
+#include "BoostUtils.h"
+#include "BenchmarkCriteria.h"
+
+#include "Framework/Interaction/Interaction.h"
 
 using namespace std;
 using namespace genie;
@@ -12,8 +17,6 @@ using namespace boost::unit_test;
 
 void reinsehgal_ut()
 {
-
-   double tolerance_in_percent = 0.001;
 
    string tune_name = RunOpt::Instance()->Tune()->Name();
    
@@ -38,7 +41,8 @@ void reinsehgal_ut()
    
    // ---> cout << " RS XSec = " << xsec << endl;
    
-   BOOST_CHECK_CLOSE( xsec, 1.74145e-11, tolerance_in_percent );
+//   BOOST_CHECK_CLOSE( xsec, 1.74145e-11, tolerance_in_percent );
+   BOOST_CHECK_CLOSE( xsec, coh_xsec::reinsehgal::xsec_default, tolerance_in_percent );
    
    // now modifiy parameter(s) and check again
    //
@@ -77,7 +81,8 @@ void reinsehgal_ut()
    // is within tolerance of the expected number
    //
    
-   BOOST_CHECK_CLOSE( xsec,  2.00335e-11, tolerance_in_percent );
+//   BOOST_CHECK_CLOSE( xsec,  2.00335e-11, tolerance_in_percent );
+   BOOST_CHECK_CLOSE( xsec,  coh_xsec::reinsehgal::xsec_use_modi_pcac_false, tolerance_in_percent );
 
    // set tune name back to "Default"
    //

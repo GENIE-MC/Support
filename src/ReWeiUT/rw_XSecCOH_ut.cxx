@@ -13,8 +13,6 @@ using namespace boost::unit_test;
 void rw_XSecCOH_ut()
 {
 
-   double tolerance_in_percent = 0.001;
-
    EventRecord* synth_event = new SynthEventCOH();
 
    AlgConfigPool* conf_pool = AlgConfigPool::Instance();
