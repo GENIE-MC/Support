@@ -1,6 +1,10 @@
 
 #include "CommonXSec.h"
 
+#ifdef PRINTOUT
+#include "UpdateBenchmark.h"
+#endif
+
 using namespace std;
 using namespace genie;
 using namespace boost::unit_test;
@@ -92,6 +96,15 @@ void lwlyn_ut()
    // BOOST_CHECK_CLOSE( xsec, 9.08713e-12, tolerance_in_percent ); // as ov GENIE v2.x.x-series
 //   BOOST_CHECK_CLOSE( xsec, 9.11463e-12, tolerance_in_percent ); // going towards GENIE v3-series
    BOOST_CHECK_CLOSE( xsec, cc_xsec::lwlyn::xsec_default, tolerance_in_percent ); // going towards GENIE v3-series
+
+#ifdef PRINTOUT
+   std::ostringstream os;
+   os << xsec;
+   std::string s = "static const double xsec_default = " + os.str() + ";" ;
+   UpdateBenchmark::Instance()->Write( "namespace lwlyn {" );
+   UpdateBenchmark::Instance()->Write( s );
+   UpdateBenchmark::Instance()->Write( "} // end namespace lwlyn" );
+#endif
    
    //
    // JY: this one below will artificially emulate an error ^_^

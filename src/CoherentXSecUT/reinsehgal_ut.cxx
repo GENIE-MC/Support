@@ -4,6 +4,10 @@
 #include "BoostUtils.h"
 #include "BenchmarkCriteria.h"
 
+#ifdef PRINTOUT
+#include "UpdateBenchmark.h"
+#endif
+
 #include "Framework/Interaction/Interaction.h"
 
 using namespace std;
@@ -44,6 +48,14 @@ void reinsehgal_ut()
 //   BOOST_CHECK_CLOSE( xsec, 1.74145e-11, tolerance_in_percent );
    BOOST_CHECK_CLOSE( xsec, coh_xsec::reinsehgal::xsec_default, tolerance_in_percent );
    
+#ifdef PRINTOUT
+   std::ostringstream os;
+   os << xsec;
+   std::string s = "static const double xsec_default = " + os.str() + ";" ;
+   UpdateBenchmark::Instance()->Write( "namespace reinsehgal {" );
+   UpdateBenchmark::Instance()->Write( s );
+#endif
+
    // now modifiy parameter(s) and check again
    //
    
@@ -83,6 +95,15 @@ void reinsehgal_ut()
    
 //   BOOST_CHECK_CLOSE( xsec,  2.00335e-11, tolerance_in_percent );
    BOOST_CHECK_CLOSE( xsec,  coh_xsec::reinsehgal::xsec_use_modi_pcac_false, tolerance_in_percent );
+
+#ifdef PRINTOUT
+   os.clear();
+   os.str("");
+   os << xsec;
+   s = "static const double xsec_use_modi_pcac_false = " + os.str() + ";" ;
+   UpdateBenchmark::Instance()->Write( s );
+   UpdateBenchmark::Instance()->Write( "} // end namespace reinsehgal" );
+#endif
 
    // set tune name back to "Default"
    //

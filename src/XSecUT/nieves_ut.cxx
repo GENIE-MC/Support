@@ -1,6 +1,10 @@
 
 #include "CommonXSec.h"
 
+#ifdef PRINTOUT
+#include "UpdateBenchmark.h"
+#endif
+
 using namespace std;
 using namespace genie;
 using namespace boost::unit_test;
@@ -58,6 +62,15 @@ void nieves_ut()
    // this is for "ZExp", towards v3-series
 //   BOOST_CHECK_CLOSE( xsec, 1.738095e-11, tolerance_in_percent );
    BOOST_CHECK_CLOSE( xsec, cc_xsec::nieves::xsec_default, tolerance_in_percent );
+
+#ifdef PRINTOUT
+   std::ostringstream os;
+   os << xsec;
+   std::string s = "static const double xsec_default = " + os.str() + ";" ;
+   UpdateBenchmark::Instance()->Write( "namespace nieves {" );
+   UpdateBenchmark::Instance()->Write( s );
+   UpdateBenchmark::Instance()->Write( "} // end namespace nieves" );
+#endif
 
    return;
 }
