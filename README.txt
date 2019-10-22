@@ -117,7 +117,6 @@ Configure GENIE build:
   --enable-test \
   --enable-numi \
   --enable-gsl \
-  --enable-rwght \
   --enable-lhapdf5 \
   --with-optimiz-level=O3 \
   --with-pythia6-lib=$PYTHIA6_LIBRARY \
