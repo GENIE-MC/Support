@@ -28,7 +28,7 @@ LIBRARIES := $(GENIE_GENERATOR_LIBS)  $(LIBRARIES)
 UTILS_SOURCES := $(wildcard *.cxx) 
 UTILS_OBJECTS  = $(addsuffix .$(ObjSuf), $(basename $(UTILS_SOURCES)))
 
-EXTRA_SRC := $(shell ls ../*UT/*.cxx | grep -v Master | grep -v ReWei) $(wildcard ../SynthEvent/*.cxx)
+EXTRA_SRC := $(shell ls ../*UT/*.cxx | grep -v Master | grep -v ReWei) $(wildcard ../SynthEvent/*.cxx) $(shell ls ../GenieUT/*/*/*.cxx)
 # I need to make it pickup objects files from here rather than *UT/...
 EXTRA_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(notdir $(EXTRA_SRC))))
 

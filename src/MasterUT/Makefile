@@ -27,7 +27,7 @@ LIBRARIES := $(GENIE_GENERATOR_LIBS) $(GENIE_RW_LIBS) $(LIBRARIES)
 UT_SRC := $(wildcard *.cxx)
 UT_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(UT_SRC))) 
 # --> EXTRA_SRC = $(wildcard ../CoherentXSecUT/*.cxx ../XSecUT/*.cxx ../ReWeiUT/*.cxx ../SynthEvent/*.cxx)
-EXTRA_SRC = $(shell ls ../*UT/*.cxx | grep -v Master) $(wildcard ../SynthEvent/*.cxx)
+EXTRA_SRC = $(shell ls ../*UT/*.cxx | grep -v Master) $(wildcard ../SynthEvent/*.cxx) $(shell ls ../GenieUT/*/*/*.cxx)
 EXTRA_OBJ = $(addsuffix .$(ObjSuf), $(basename $(EXTRA_SRC)))
 
 all: master_ut 
