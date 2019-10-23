@@ -12,6 +12,7 @@ extern void lwlyn_ut();
 extern void nieves_ut();
 //extern void singlekaon_ut();
 extern void reinsehgal_ut();
+extern void arconstants_ut();
 
 int main( /* int argc, char* argv[] */ )
 {
@@ -48,6 +49,7 @@ int main( /* int argc, char* argv[] */ )
    inst->Write( " " );
    
    reinsehgal_ut();
+   arconstants_ut();
    
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );

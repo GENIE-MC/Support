@@ -24,6 +24,7 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    
    auto ts2 = BOOST_TEST_SUITE("COHXSec");
    ts2->add( BOOST_TEST_CASE( &reinsehgal_ut ) );
+   ts2->add( BOOST_TEST_CASE( &arconstants_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("ReWei");
    ts3->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
