@@ -36,6 +36,7 @@ CONF_CUSTOM_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(CONF_CUSTOM_SRC)))
 MULT_TUNES_SRC := multiple_tunes.cxx SynthEvent.cxx
 MULT_TUNES_OBJ  = $(addsuffix .$(ObjSuf), $(basename $(MULT_TUNES_SRC)))
 
+
 all: gen_spl_evts get_param conf_xsec conf_custom mult_tunes
 
 gen_spl_evts: FORCE
@@ -58,6 +59,7 @@ mult_tunes: FORCE
 	$(CXX) $(CXXFLAGS) -c $(MULT_TUNES_SRC) $(INCLUDES) 
 	$(LD) $(LDFLAGS) $(MULT_TUNES_OBJ) $(LIBRARIES) -o mult_tunes 
 
+
 purge: FORCE
 	$(RM) *.o *~ core 
 
@@ -68,6 +70,7 @@ clean: FORCE
 	$(RM) conf_xsec
 	$(RM) conf_custom
 	$(RM) mult_tunes
+	$(RM) tst
 
 
 FORCE:

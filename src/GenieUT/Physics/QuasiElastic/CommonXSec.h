@@ -12,4 +12,6 @@
 #include "Framework/ParticleData/PDGLibrary.h"
 #include "Framework/ParticleData/PDGUtils.h"
 
+#include "SynthEvent.h"
+
 #endif
