@@ -27,6 +27,10 @@ namespace zexpaxialff {
 static const double fa_default = -1.03345;
 } // end namespace zexpaxialff
  
+namespace ahrens {
+static const double xsec_default = 8.58382e-12;
+} // end namespace ahrens
+ 
 } // end namespace qel_xsec
  
 namespace coh_xsec {

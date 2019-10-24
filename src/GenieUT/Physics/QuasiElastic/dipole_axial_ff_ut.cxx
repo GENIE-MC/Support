@@ -27,7 +27,7 @@ void dipole_axial_ff_ut()
    rg_dip_ax->Set( "QEL-FA0", -1.267 );
    rg_dip_ax->Set( "QEL-Ma",   0.99  );
    rg_dip_ax->Set( "QEL-Mv",   0.84  ); 
-   rg_dip_ax->Print( cout );
+// -->   rg_dip_ax->Print( cout );
 
    dip->Configure( *rg_dip_ax );
    

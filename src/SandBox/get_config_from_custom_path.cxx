@@ -99,7 +99,7 @@ int main( /* int argc, char** argv */ )
 
    Registry* gpl  = conf_pool->GlobalParameterList();
 
-   RgAlg xsec_alg = gpl->GetAlg("XSecModel@genie::EventGenerator/COH-CC");
+   RgAlg xsec_alg = gpl->GetAlg("XSecModel@genie::EventGenerator/COH-CC-PION");
    
    AlgId id(xsec_alg);
 

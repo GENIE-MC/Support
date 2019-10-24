@@ -14,6 +14,7 @@ extern void nieves_ut();
 extern void dipole_axial_ff_ut();
 extern void dipole_el_ff_ut();
 extern void zexp_axial_ff_ut();
+extern void ahrens_ut();
 // coh domain
 extern void reinsehgal_ut();
 // strange domain
@@ -55,6 +56,10 @@ int main( /* int argc, char* argv[] */ )
    inst->Write( " " );
    
    zexp_axial_ff_ut();
+
+   inst->Write( " " );
+   
+   ahrens_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace qel_xsec" );
