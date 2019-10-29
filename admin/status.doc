@@ -25,8 +25,8 @@
 ./Coherent/XSection/ARSampledNucleus.cxx                         in progress (wg)
 ./Coherent/XSection/ARWFSolution.cxx                             in progress (wg)
 ./Coherent/XSection/ARWavefunction.cxx                           in progress (wg)
-./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx
-./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx
+./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   in progress (wg)
+./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    in progress (wg)
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx
 ./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx
 ./Coherent/XSection/CEvNSXSec.cxx
