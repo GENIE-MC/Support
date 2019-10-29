@@ -8,11 +8,18 @@ using namespace std;
 using namespace genie;
 //using namespace boost::unit_test;
 
+// qel domain
 extern void lwlyn_ut();
 extern void nieves_ut();
-//extern void singlekaon_ut();
+extern void dipole_axial_ff_ut();
+extern void dipole_el_ff_ut();
+extern void zexp_axial_ff_ut();
+extern void ahrens_ut();
+// coh domain
 extern void reinsehgal_ut();
 extern void arconstants_ut();
+// strange domain
+//extern void singlekaon_ut();
 
 int main( /* int argc, char* argv[] */ )
 {
@@ -28,9 +35,9 @@ int main( /* int argc, char* argv[] */ )
    inst->Write( "static const double tolerance_in_percent = 0.001;" );
    inst->Write( " " );
    
-   // CC
+   // QEL
    
-   inst->Write( "namespace cc_xsec {" );
+   inst->Write( "namespace qel_xsec {" );
    inst->Write( " " );
    
    lwlyn_ut();
@@ -40,7 +47,23 @@ int main( /* int argc, char* argv[] */ )
    nieves_ut();
    
    inst->Write( " " );
-   inst->Write( "} // end namespace cc_xsec" );
+   
+   dipole_axial_ff_ut();
+
+   inst->Write( " " );
+   
+   dipole_el_ff_ut();
+
+   inst->Write( " " );
+   
+   zexp_axial_ff_ut();
+
+   inst->Write( " " );
+   
+   ahrens_ut();
+
+   inst->Write( " " );
+   inst->Write( "} // end namespace qel_xsec" );
    inst->Write( " " );
    
    // COH
