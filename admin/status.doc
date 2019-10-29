@@ -21,10 +21,10 @@
 ./Coherent/EventGen/COHKinematicsGenerator.cxx
 ./Coherent/EventGen/COHPrimaryLeptonGenerator.cxx
 ./Coherent/XSection/ARConstants.cxx                              Added to the unit-test
-./Coherent/XSection/AREikonalSolution.cxx
-./Coherent/XSection/ARSampledNucleus.cxx
-./Coherent/XSection/ARWFSolution.cxx
-./Coherent/XSection/ARWavefunction.cxx
+./Coherent/XSection/AREikonalSolution.cxx                        in progress (wg)
+./Coherent/XSection/ARSampledNucleus.cxx                         in progress (wg)
+./Coherent/XSection/ARWFSolution.cxx                             in progress (wg)
+./Coherent/XSection/ARWavefunction.cxx                           in progress (wg)
 ./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx
