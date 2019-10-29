@@ -17,10 +17,10 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    auto ts1 = BOOST_TEST_SUITE("QELXSec");
    ts1->add( BOOST_TEST_CASE( &lwlyn_ut ) );      
    ts1->add( BOOST_TEST_CASE( &nieves_ut ) );
-//   ts1->add( BOOST_TEST_CASE( &dipole_axial_ff_ut ) );
-//   ts1->add( BOOST_TEST_CASE( &dipole_el_ff_ut ) );
-//   ts1->add( BOOST_TEST_CASE( &zexp_axial_ff_ut ) );
-//   ts1->add( BOOST_TEST_CASE( &ahrens_ut ) );
+   ts1->add( BOOST_TEST_CASE( &dipole_axial_ff_ut ) );
+   ts1->add( BOOST_TEST_CASE( &dipole_el_ff_ut ) );
+   ts1->add( BOOST_TEST_CASE( &zexp_axial_ff_ut ) );
+   ts1->add( BOOST_TEST_CASE( &ahrens_ut ) );
    
    auto ts2 = BOOST_TEST_SUITE("COHXSec");
    ts2->add( BOOST_TEST_CASE( &reinsehgal_ut ) );
