@@ -17,6 +17,7 @@ extern void zexp_axial_ff_ut();
 extern void ahrens_ut();
 // coh domain
 extern void reinsehgal_ut();
+extern void arconstants_ut();
 // strange domain
 //extern void singlekaon_ut();
 
@@ -71,6 +72,7 @@ int main( /* int argc, char* argv[] */ )
    inst->Write( " " );
    
    reinsehgal_ut();
+   arconstants_ut();
    
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );
