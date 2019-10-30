@@ -23,7 +23,7 @@
 ./Coherent/XSection/ARConstants.cxx                              Added to the unit-test
 ./Coherent/XSection/AREikonalSolution.cxx                        in progress (wg)
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to the unit-test
-./Coherent/XSection/ARWFSolution.cxx                             in progress (wg)
+./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
 ./Coherent/XSection/ARWavefunction.cxx                           in progress (wg)
 ./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   in progress (wg)
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    in progress (wg)
