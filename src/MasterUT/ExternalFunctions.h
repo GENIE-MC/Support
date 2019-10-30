@@ -12,6 +12,7 @@ extern void ahrens_ut();
 // coh
 extern void reinsehgal_ut();
 extern void arconstants_ut();
+extern void arsamplednucleus_ut();
 
 // strange
 extern void singlekaon_ut();

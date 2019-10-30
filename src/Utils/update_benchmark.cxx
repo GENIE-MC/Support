@@ -18,6 +18,7 @@ extern void ahrens_ut();
 // coh domain
 extern void reinsehgal_ut();
 extern void arconstants_ut();
+extern void arsamplednucleus_ut();
 // strange domain
 //extern void singlekaon_ut();
 
@@ -73,6 +74,7 @@ int main( /* int argc, char* argv[] */ )
    
    reinsehgal_ut();
    arconstants_ut();
+   arsamplednucleus_ut();
    
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );

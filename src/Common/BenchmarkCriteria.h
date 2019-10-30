@@ -2,7 +2,7 @@
 #define BENCHMARK_CRITERIA_H
  
 static const double tolerance_in_percent = 0.001;
-
+ 
 namespace qel_xsec {
  
 namespace lwlyn {
@@ -39,7 +39,6 @@ namespace reinsehgal {
 static const double xsec_default = 1.74145e-11;
 static const double xsec_use_modi_pcac_false = 2.00335e-11;
 } // end namespace reinsehgal
-
 namespace arconstant {
 static const double HBar = 0.19733;
 static const double Ma_Nucleon = 1;
@@ -70,6 +69,21 @@ static const double Pi0Mass = 0.684015;
 static const double cm38Conversion = 1e+12;
 static const double NCFactor = 0.5446;
 } // end namespace arconstants
+namespace arsamplednucleus {
+static const unsigned int A = 12;
+static const unsigned int Z = 6;
+static const unsigned int N = 6;
+static const double density = 0.0738277;
+static const double densityofcentres = 0.0780715;
+static const double radius = 2.37793;
+static const double radiusmax = 6.86829;
+static const double samplepoint1 = 2.35875;
+static const double samplepoint2 = 0.3014;
+static const unsigned int sample = 20;
+static const unsigned int ndensities = 40;
+static const double matterdensity = 0.167552;
+static const double numberdensity = 0.17601;
+} // end namespace arsamplednucleus
  
 } // end namespace coh_xsec
  
