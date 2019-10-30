@@ -1,0 +1,6 @@
+In Physics/Coherent/XSection/AREikonalSolution:
+   One of the two class constructors AREikonalSolution(bool debug, ARSampledNucleus* nucl) does lead to segmentation faults 
+   when using its public function Elements. A search finds no use of this particular constructor in the GENIE code.
+   The other class constructor AREikonalSolution(bool debug, AlvarezRusoCOHPiPDXSec* parent) is used by the GENIE code
+   and works fine.
+----------------------------------------------------------------------------------------------------------------------------
