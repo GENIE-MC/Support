@@ -30,6 +30,27 @@ static const double fa_default = -1.03345;
 namespace ahrens {
 static const double xsec_default = 8.58382e-12;
 } // end namespace ahrens
+
+namespace bba03el {
+static const double gep_default = 0.74059;
+static const double gmp_default = 2.09216;
+static const double gen_default = 0.0352822;
+static const double gmn_default = -1.44574;
+} // end namespace bba03el
+ 
+namespace bba05el {
+static const double gep_default = 0.747147;
+static const double gmp_default = 2.09245;
+static const double gen_default = 0.0393927;
+static const double gmn_default = -1.40783;
+} // end namespace bba05el
+ 
+namespace bba07el {
+static const double gep_default = 0.736716;
+static const double gmp_default = 2.08578;
+static const double gen_default = 0.0383839;
+static const double gmn_default = -1.40956;
+} // end namespace bba07el
  
 } // end namespace qel_xsec
  

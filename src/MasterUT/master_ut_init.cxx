@@ -21,11 +21,14 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts1->add( BOOST_TEST_CASE( &dipole_el_ff_ut ) );
    ts1->add( BOOST_TEST_CASE( &zexp_axial_ff_ut ) );
    ts1->add( BOOST_TEST_CASE( &ahrens_ut ) );
+//   ts1->add( BOOST_TEST_CASE( &bba03_el_ff_ut ) );
+//   ts1->add( BOOST_TEST_CASE( &bba05_el_ff_ut ) );
+//   ts1->add( BOOST_TEST_CASE( &bba07_el_ff_ut ) );
    
    auto ts2 = BOOST_TEST_SUITE("COHXSec");
    ts2->add( BOOST_TEST_CASE( &reinsehgal_ut ) );
    ts2->add( BOOST_TEST_CASE( &arconstants_ut ) );
-   ts2->add( BOOST_TEST_CASE( &arsamplednucleus_ut ) );
+// --> until source code is committed -->   ts2->add( BOOST_TEST_CASE( &arsamplednucleus_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("StrangeXSec");
    ts3->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number

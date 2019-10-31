@@ -21,8 +21,13 @@ void zexp_axial_ff_ut()
    
    BOOST_CHECK( zexp != 0 );
       
-// -->   zexp->Configure("ZExp");
+   // configure with tune (global pool from XML config)
+   //
+   zexp->Configure("ZExp");
 
+/*
+   // explicit (local) config would look as follows:
+   //
    Registry* rg = new Registry( "zexp_axial_ut" );
    rg->UnLock();
    rg->Set( "CommonParam", "QuasiElastic" );
@@ -36,15 +41,14 @@ void zexp_axial_ff_ut()
    rg->Set( "QEL-Z_A1",  2.3 ); 
    rg->Set( "QEL-Z_A2", -0.6 ); 
    rg->Set( "QEL-Z_A3", -3.8 ); 
-   rg->Set( "QEL-Z_A4",  2.3 ); 
-   
+   rg->Set( "QEL-Z_A4",  2.3 );    
    zexp->Configure( *rg );
+*/
    
    double fa = zexp->FA( evt->Summary() );
    
    // Q: Should we check that it's non-zero ?
    
-//   BOOST_CHECK_CLOSE( fa, -1.03345, tolerance_in_percent ); 
    BOOST_CHECK_CLOSE( fa, qel_xsec::zexpaxialff::fa_default, tolerance_in_percent ); 
          
 #ifdef PRINTOUT

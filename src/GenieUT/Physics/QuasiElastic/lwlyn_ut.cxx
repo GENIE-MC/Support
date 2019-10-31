@@ -34,6 +34,10 @@ using namespace boost::unit_test;
 void lwlyn_ut()
 {
       
+   // silence TransverseEnhancementFFModel messages
+   //
+   Messenger::Instance()->SetPriorityLevel( "TransverseEnhancementFFModel", pFATAL );
+
    EventRecord* evt = new SynthEvent();
 
    // NOTE: it can as well be a local object rather than a pointer

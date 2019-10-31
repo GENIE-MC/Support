@@ -8,6 +8,9 @@ extern void dipole_axial_ff_ut();
 extern void dipole_el_ff_ut();
 extern void zexp_axial_ff_ut();
 extern void ahrens_ut();
+extern void bba03_el_ff_ut();
+extern void bba05_el_ff_ut();
+extern void bba07_el_ff_ut();
 
 // coh
 extern void reinsehgal_ut();

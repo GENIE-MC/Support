@@ -36,7 +36,10 @@ int main( int argc, char *argv[] )
 
    // try to silence GENIE Messenger just a little bit...
    //
+   Messenger::Instance()->SetPriorityLevel( "Messenger", pFATAL );
    Messenger::Instance()->SetPrioritiesFromXmlFile("Messenger_whisper.xml");
+   Messenger::Instance()->SetPriorityLevel( "RunOpt", pFATAL );
+   Messenger::Instance()->SetPriorityLevel( "TuneId", pFATAL );
    
 /* this is an old(er) approach, before RunOpt::SetTuneName method was available
    RunOpt::Instance()->ReadFromCommandLine(0,0);

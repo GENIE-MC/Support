@@ -15,6 +15,9 @@ extern void dipole_axial_ff_ut();
 extern void dipole_el_ff_ut();
 extern void zexp_axial_ff_ut();
 extern void ahrens_ut();
+extern void bba03_el_ff_ut();
+extern void bba05_el_ff_ut();
+extern void bba07_el_ff_ut();
 // coh domain
 extern void reinsehgal_ut();
 extern void arconstants_ut();
@@ -39,29 +42,24 @@ int main( /* int argc, char* argv[] */ )
    // QEL
    
    inst->Write( "namespace qel_xsec {" );
-   inst->Write( " " );
-   
+   inst->Write( " " );   
    lwlyn_ut();
-   
    inst->Write( " " );
-   
    nieves_ut();
-   
    inst->Write( " " );
-   
    dipole_axial_ff_ut();
-
    inst->Write( " " );
-   
    dipole_el_ff_ut();
-
    inst->Write( " " );
-   
    zexp_axial_ff_ut();
-
    inst->Write( " " );
-   
    ahrens_ut();
+   inst->Write( " " );
+   bba03_el_ff_ut();
+   inst->Write( " " );
+   bba05_el_ff_ut();
+   inst->Write( " " );
+   bba07_el_ff_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace qel_xsec" );
@@ -74,7 +72,7 @@ int main( /* int argc, char* argv[] */ )
    
    reinsehgal_ut();
    arconstants_ut();
-   arsamplednucleus_ut();
+// --> until source code committed -->   arsamplednucleus_ut();
    
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );
