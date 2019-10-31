@@ -53,7 +53,10 @@ int main( int argc, char *argv[] )
    RunOpt::Instance()->SetTuneName(); // It'll be "Default" which in v3.x.y is G18_02a
 //   cout << RunOpt::Instance()->Tune()->Name() << endl;
    
+   cout << endl;
    cout << "***** Starting Unit Tests *****" << endl;
+   cout << endl;
+   
    int status = unit_test_main( &init_unit_test_suite, argc, argv );
 
    return status;
