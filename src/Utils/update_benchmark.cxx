@@ -19,7 +19,8 @@ extern void bba03_el_ff_ut();
 extern void bba05_el_ff_ut();
 extern void bba07_el_ff_ut();
 extern void trans_enh_ff_ut();
-extern void lwlyn_cc_ff_ut();
+extern void lwlyn_ff_cc_ut();
+extern void lwlyn_ff_nc_ut();
 // coh domain
 extern void reinsehgal_ut();
 extern void arconstants_ut();
@@ -65,7 +66,9 @@ int main( /* int argc, char* argv[] */ )
    inst->Write( " " );
    trans_enh_ff_ut();
    inst->Write( " " );
-   lwlyn_cc_ff_ut();
+   lwlyn_ff_cc_ut();
+   inst->Write( " " );
+   lwlyn_ff_nc_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace qel_xsec" );

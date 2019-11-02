@@ -10,7 +10,7 @@ using namespace std;
 using namespace genie;
 using namespace boost::unit_test;
 
-void lwlyn_cc_ff_ut()
+void lwlyn_ff_cc_ut()
 {
 
    EventRecord* evt = new SynthEvent();
