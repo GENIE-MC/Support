@@ -30,7 +30,7 @@ static const double fa_default = -1.03345;
 namespace ahrens {
 static const double xsec_default = 8.58382e-12;
 } // end namespace ahrens
-
+ 
 namespace bba03el {
 static const double gep_default = 0.74059;
 static const double gmp_default = 2.09216;
@@ -51,6 +51,20 @@ static const double gmp_default = 2.08578;
 static const double gen_default = 0.0383839;
 static const double gmn_default = -1.40956;
 } // end namespace bba07el
+ 
+namespace transenh {
+static const double gep_default = 0.736716;
+static const double gmp_default = 2.47362;
+static const double gen_default = 0.0383839;
+static const double gmn_default = -1.67167;
+} // end namespace transenh
+ 
+namespace lwlynffcc {
+static const double f1v_default = 0.777606;
+static const double xif2v_default = 2.71773;
+static const double fa_default = -1.03748;
+static const double fp_default = -14.9555;
+} // end namespace lwlynffcc
  
 } // end namespace qel_xsec
  
@@ -90,21 +104,6 @@ static const double Pi0Mass = 0.684015;
 static const double cm38Conversion = 1e+12;
 static const double NCFactor = 0.5446;
 } // end namespace arconstants
-namespace arsamplednucleus {
-static const unsigned int A = 12;
-static const unsigned int Z = 6;
-static const unsigned int N = 6;
-static const double density = 0.0738277;
-static const double densityofcentres = 0.0780715;
-static const double radius = 2.37793;
-static const double radiusmax = 6.86829;
-static const double samplepoint1 = 2.35875;
-static const double samplepoint2 = 0.3014;
-static const unsigned int sample = 20;
-static const unsigned int ndensities = 40;
-static const double matterdensity = 0.167552;
-static const double numberdensity = 0.17601;
-} // end namespace arsamplednucleus
  
 } // end namespace coh_xsec
  

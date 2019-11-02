@@ -18,6 +18,8 @@ extern void ahrens_ut();
 extern void bba03_el_ff_ut();
 extern void bba05_el_ff_ut();
 extern void bba07_el_ff_ut();
+extern void trans_enh_ff_ut();
+extern void lwlyn_cc_ff_ut();
 // coh domain
 extern void reinsehgal_ut();
 extern void arconstants_ut();
@@ -60,6 +62,10 @@ int main( /* int argc, char* argv[] */ )
    bba05_el_ff_ut();
    inst->Write( " " );
    bba07_el_ff_ut();
+   inst->Write( " " );
+   trans_enh_ff_ut();
+   inst->Write( " " );
+   lwlyn_cc_ff_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace qel_xsec" );
