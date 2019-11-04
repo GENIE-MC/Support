@@ -19,6 +19,7 @@ extern void lwlyn_ff_nc_ut();
 extern void reinsehgal_ut();
 extern void arconstants_ut();
 extern void arsamplednucleus_ut();
+extern void areikonalsolution_ut();
 
 // strange
 extern void singlekaon_ut();

@@ -25,6 +25,7 @@ extern void lwlyn_ff_nc_ut();
 extern void reinsehgal_ut();
 extern void arconstants_ut();
 extern void arsamplednucleus_ut();
+extern void areikonalsolution_ut();
 // strange domain
 //extern void singlekaon_ut();
 
@@ -38,6 +39,8 @@ int main( /* int argc, char* argv[] */ )
    
    inst->Write( "#ifndef BENCHMARK_CRITERIA_H" );
    inst->Write( "#define BENCHMARK_CRITERIA_H" );
+   inst->Write( " " );
+   inst->Write( "#include <complex>" );
    inst->Write( " " );
    inst->Write( "static const double tolerance_in_percent = 0.001;" );
    inst->Write( " " );
@@ -81,8 +84,9 @@ int main( /* int argc, char* argv[] */ )
    
    reinsehgal_ut();
    arconstants_ut();
-// --> until source code committed -->   arsamplednucleus_ut();
-   
+   arsamplednucleus_ut();
+   areikonalsolution_ut();
+
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );
    
