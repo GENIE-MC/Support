@@ -21,7 +21,7 @@
 ./Coherent/EventGen/COHKinematicsGenerator.cxx
 ./Coherent/EventGen/COHPrimaryLeptonGenerator.cxx
 ./Coherent/XSection/ARConstants.cxx                              Added to the unit-test
-./Coherent/XSection/AREikonalSolution.cxx                        in progress (wg) *** See issue 1 in file admin/issues for additional information
+./Coherent/XSection/AREikonalSolution.cxx                        Added to the unit-test *** See issue 1 in file admin/issues for additional information
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to the unit-test
 ./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
 ./Coherent/XSection/ARWavefunction.cxx                           in progress (wg)
@@ -158,18 +158,18 @@
 ./QuasiElastic/XSection/AhrensNCELPXSec.cxx                                 added to unit-test
 ./QuasiElastic/XSection/AxialFormFactor.cxx
 ./QuasiElastic/XSection/AxialFormFactorModelI.cxx
-./QuasiElastic/XSection/BBA03ELFormFactorsModel.cxx
-./QuasiElastic/XSection/BBA05ELFormFactorsModel.cxx
-./QuasiElastic/XSection/BBA07ELFormFactorsModel.cxx
+./QuasiElastic/XSection/BBA03ELFormFactorsModel.cxx                         added to unit-test
+./QuasiElastic/XSection/BBA05ELFormFactorsModel.cxx                         added to unit-test
+./QuasiElastic/XSection/BBA07ELFormFactorsModel.cxx                         added to unit-test
 ./QuasiElastic/XSection/DipoleAxialFormFactorModel.cxx                      added to unit-test
 ./QuasiElastic/XSection/DipoleELFormFactorsModel.cxx                        added to unit-test
 ./QuasiElastic/XSection/ELFormFactors.cxx
 ./QuasiElastic/XSection/ELFormFactorsModelI.cxx
 ./QuasiElastic/XSection/KuzminNaumov2016AxialFormFactorModel.cxx
 ./QuasiElastic/XSection/LwlynSmithFF.cxx
-./QuasiElastic/XSection/LwlynSmithFFCC.cxx
+./QuasiElastic/XSection/LwlynSmithFFCC.cxx                                   added to unit-test
 ./QuasiElastic/XSection/LwlynSmithFFDeltaS.cxx
-./QuasiElastic/XSection/LwlynSmithFFNC.cxx
+./QuasiElastic/XSection/LwlynSmithFFNC.cxx                                   added to unit-test
 ./QuasiElastic/XSection/LwlynSmithQELCCPXSec.cxx                             added to unit-test
 ./QuasiElastic/XSection/NewQELXSec.cxx
 ./QuasiElastic/XSection/NievesQELCCPXSec.cxx                                 added to unit-test
@@ -182,7 +182,7 @@
 ./QuasiElastic/XSection/SmithMonizQELCCPXSec.cxx
 ./QuasiElastic/XSection/SmithMonizQELCCXSec.cxx
 ./QuasiElastic/XSection/SmithMonizUtils.cxx
-./QuasiElastic/XSection/TransverseEnhancementFFModel.cxx
+./QuasiElastic/XSection/TransverseEnhancementFFModel.cxx                    added to unit-test
 ./QuasiElastic/XSection/ZExpAxialFormFactorModel.cxx                        added to unit-test
 ./Resonance/EventGen/RESHadronicSystemGenerator.cxx
 ./Resonance/EventGen/RESInteractionListGenerator.cxx
