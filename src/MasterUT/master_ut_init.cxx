@@ -33,6 +33,7 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts2->add( BOOST_TEST_CASE( &arconstants_ut ) );
    ts2->add( BOOST_TEST_CASE( &arsamplednucleus_ut ) );
    ts2->add( BOOST_TEST_CASE( &areikonalsolution_ut ) );
+   ts2->add( BOOST_TEST_CASE( &arwavefunction_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("StrangeXSec");
    ts3->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number
