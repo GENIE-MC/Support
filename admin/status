@@ -21,7 +21,7 @@
 ./Coherent/EventGen/COHKinematicsGenerator.cxx
 ./Coherent/EventGen/COHPrimaryLeptonGenerator.cxx
 ./Coherent/XSection/ARConstants.cxx                              Added to unit-test
-./Coherent/XSection/AREikonalSolution.cxx                        Added to unit-test *** See issue 1 in file admin/issues for additional information
+./Coherent/XSection/AREikonalSolution.cxx                        Added to unit-test *** See issue 1 in admin/issues for additional information
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to unit-test
 ./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
 ./Coherent/XSection/ARWavefunction.cxx                           Added to unit test
