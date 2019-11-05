@@ -25,7 +25,7 @@
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to unit-test
 ./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
 ./Coherent/XSection/ARWavefunction.cxx                           Added to unit test
-./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   in progress (wg)
+./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit test
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    in progress (wg)
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx
 ./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx
