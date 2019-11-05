@@ -166,6 +166,36 @@ static const std::complex<double> get62(0.3,-0.3);
 static const std::complex<double> get63(0.4,-0.4);
 } // end namespace wavefunction
  
+namespace alvarezrusocohpipdxsec {
+static const unsigned int sampling = 20;
+static const double pimass = 0.707293;
+static const double leptonmass = 0.00258957;
+static const double DXSec_CC_E_Nu_Nieves = 0.000104381;
+static const double DXSec_CC_E_Nu_Garcia = 0.000104381;
+static const double DXSec_CC_E_AntiNu_Nieves = 0.000104381;
+static const double DXSec_CC_E_AntiNu_Garcia = 0.000104381;
+static const double DXSec_NC_E_Nu_Nieves = 0.000104381;
+static const double DXSec_NC_E_Nu_Garcia = 0.000104381;
+static const double DXSec_NC_E_AntiNu_Nieves = 0.000104381;
+static const double DXSec_NC_E_AntiNu_Garcia = 0.000104381;
+static const double DXSec_CC_Mu_Nu_Nieves = 0.000104381;
+static const double DXSec_CC_Mu_Nu_Garcia = 0.000104381;
+static const double DXSec_CC_Mu_AntiNu_Nieves = 0.000104381;
+static const double DXSec_CC_Mu_AntiNu_Garcia = 0.000104381;
+static const double DXSec_NC_Mu_Nu_Nieves = 0.000104381;
+static const double DXSec_NC_Mu_Nu_Garcia = 0.000104381;
+static const double DXSec_NC_Mu_AntiNu_Nieves = 0.000104381;
+static const double DXSec_NC_Mu_AntiNu_Garcia = 0.000104381;
+static const double DXSec_CC_Tau_Nu_Nieves = 0.000104381;
+static const double DXSec_CC_Tau_Nu_Garcia = 0.000104381;
+static const double DXSec_CC_Tau_AntiNu_Nieves = 0.000104381;
+static const double DXSec_CC_Tau_AntiNu_Garcia = 0.000104381;
+static const double DXSec_NC_Tau_Nu_Nieves = 0.000104381;
+static const double DXSec_NC_Tau_Nu_Garcia = 0.000104381;
+static const double DXSec_NC_Tau_AntiNu_Nieves = 0.000104381;
+static const double DXSec_NC_Tau_AntiNu_Garcia = 0.000104381;
+} // end namespace alvarezrusocohpipdxsec
+ 
 } // end namespace coh_xsec
  
 #endif

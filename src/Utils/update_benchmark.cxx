@@ -27,6 +27,7 @@ extern void arconstants_ut();
 extern void arsamplednucleus_ut();
 extern void areikonalsolution_ut();
 extern void arwavefunction_ut();
+extern void alvarezrusocohpipdxsec_ut();
 // strange domain
 //extern void singlekaon_ut();
 
@@ -92,6 +93,8 @@ int main( /* int argc, char* argv[] */ )
    areikonalsolution_ut();
    inst->Write( " " );   
    arwavefunction_ut();
+   inst->Write( " " );   
+   alvarezrusocohpipdxsec_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );
