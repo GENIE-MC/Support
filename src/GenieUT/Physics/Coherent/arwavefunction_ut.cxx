@@ -12,7 +12,7 @@
 using namespace std;
 using namespace genie;
 using namespace boost::unit_test;
-using namespace alvarezruso;
+using namespace genie::alvarezruso;
 
 void arwavefunction_ut()
 {
@@ -23,10 +23,28 @@ void arwavefunction_ut()
   unsigned int valint;
   complex<double> valcmplx,valcmplx1;
   vector<complex<double>> v;
-  ar.set(6,0,complex(0.1,-0.1));
-  ar.set(6,1,complex(0.2,-0.2));
-  ar.set(6,2,complex(0.3,-0.3));
-  ar.set(6,3,complex(0.4,-0.4));
+  
+  // this is causing problems with gcc v4.9.3
+  // (might have something to do with the C++ standards)
+  //
+  //ar.set(6,0,complex(0.1,-0.1));
+  //ar.set(6,1,complex(0.2,-0.2));
+  //ar.set(6,2,complex(0.3,-0.3));
+  //ar.set(6,3,complex(0.4,-0.4));
+  //
+  // this goes well with either gcc v4.9.3 or v7.3.0
+  //
+  complex<double> cmpx(0.1,-0.1);
+  ar.set(6,0,cmpx);
+  cmpx.real( 0.2);
+  cmpx.imag(-0.2);
+  ar.set(6,1,cmpx);
+  cmpx.real( 0.3);
+  cmpx.imag(-0.3);
+  ar.set(6,2,cmpx);
+  cmpx.real( 0.4);
+  cmpx.imag(-0.4);
+  ar.set(6,3,cmpx);
 
 
 #ifdef PRINTOUT
