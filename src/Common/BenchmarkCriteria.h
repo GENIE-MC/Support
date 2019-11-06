@@ -75,6 +75,13 @@ static const double fa_default = -0.518741;
 static const double fp_default = -7.47773;
 } // end namespace lwlynffnc
  
+namespace lwlynffds {
+static const double f1v_default = 0;
+static const double xif2v_default = 0;
+static const double fa_default = -0;
+static const double fp_default = -0;
+} // end namespace lwlynffds
+ 
 } // end namespace qel_xsec
  
 namespace coh_xsec {

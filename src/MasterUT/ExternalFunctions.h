@@ -14,6 +14,7 @@ extern void bba07_el_ff_ut();
 extern void trans_enh_ff_ut();
 extern void lwlyn_ff_cc_ut();
 extern void lwlyn_ff_nc_ut();
+extern void lwlyn_ff_deltas_ut();
 
 // coh
 extern void reinsehgal_ut();
