@@ -43,8 +43,8 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
                                                   // needs further understanding...
 
    auto ts4 = BOOST_TEST_SUITE("ReWei");
-   //ts4->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
-   //ts4->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
+   ts4->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
+   ts4->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
    ts4->add( BOOST_TEST_CASE( &rw_XSecCCRES_ut ) );
    ts4->add( BOOST_TEST_CASE( &rw_XSecNCRES_ut ) );
    ts4->add( BOOST_TEST_CASE( &rw_XSecCOH_ut ) );

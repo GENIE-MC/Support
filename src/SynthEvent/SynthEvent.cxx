@@ -28,7 +28,7 @@ SynthEvent::SynthEvent()
                                                         // and this is what the RW does !!!
       
 //
-/* add probe and target to the event; probe is mandatory, otherwise the RW will crash
+// add probe and target to the event; probe is mandatory, otherwise the RW will crash
 // 
    this->AddParticle( 14,         kIStInitialState,        -1, -1,  4,  4,  0.,     0.,     3.,     3.,   
                              0.982484, 0.250677, -0.742634, 0.000000 );
@@ -36,7 +36,7 @@ SynthEvent::SynthEvent()
                              0., 0., 0., 0. );
 
    // in this case no need to have all secondaries in the event record, just overall kinenatic and probe/target would be enough
-
+   /*
    this->AddParticle( 2112,       kIStNucleonTarget,        1, -1,  5,  5, -0.157, -0.071,  0.149,  0.918, 
                              0.982484, 0.250677, -0.742634, 0.000000 );
    this->AddParticle( 1000060110, kIStIntermediateState,    1, -1, 11, 11,  0.157,  0.071, -0.149, 10.257, 
