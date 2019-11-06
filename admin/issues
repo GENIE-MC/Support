@@ -4,3 +4,9 @@
       The other class constructor AREikonalSolution(bool debug, AlvarezRusoCOHPiPDXSec* parent) is used by the GENIE code
       and works fine.
 ----------------------------------------------------------------------------------------------------------------------------
+2. In Physics/Coherent/XSection/AlvarezRusoCOHPiPXSec and Physics/Coherent/XSection/ReinSegalCOPiPXSec the function integrator
+   is not unit-tested due to time limitations. To be able to do this we need to reduce the maximum number of events used 
+   by the integrator. Under investigation.
+----------------------------------------------------------------------------------------------------------------------------
+3. We need to revisit the singlekaon_ut. Its current implementation is not using the BenchmarkCriteria and the numbers look
+   suspect
