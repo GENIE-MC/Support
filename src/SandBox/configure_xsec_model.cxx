@@ -94,8 +94,34 @@ int main( void )
    // Check what XSec it generates now
    //
    double xsec_modi = rs_xsec->XSec( synth_event->Summary(), kPSxyfE );
-   cout << " Modified RS XSec(modi) = " << xsec_modi << endl;   
+   cout << " Modified RS XSec(modi) = " << xsec_modi << endl; 
    
+   // now let's try to tweak sub-alogirithm
+   //
+   // when getting the sub-algorithm, we have to cast away cosnt which is an ugly trick
+   // but unfortunately there's no direct way to set (a separate) sub-algorithm, e.g.
+   // xsec integrator, but only through global config...
+   //
+   Algorithm* xsec_int = (Algorithm*)(rs_xsec->SubAlg("XSec-Integrator"));
+   
+   (xsec_int->GetConfig()).Print(cout);
+   cout <<endl;
+   
+   Registry rg_xsec_int_modi( xsec_int->GetConfig() );
+   string gsl_min_eval = "gsl-min-eval";
+   string gsl_max_eval = "gsl-max-eval";
+   rg_xsec_int_modi.Set( gsl_min_eval, 10 );
+   rg_xsec_int_modi.Set( gsl_max_eval, 100 );
+   xsec_int->Configure( rg_xsec_int_modi );
+   
+   // re-print, to check if config of sub-algorithm is modified
+   //
+   ( (rs_xsec->SubAlg("XSec-Integrator"))->GetConfig() ).Print(cout);
+   cout << endl;
+   
+   double rs_integral = rs_xsec->Integral( synth_event->Summary() );
+   cout << " rs_integral = " << rs_integral << endl;
+        
    cout << " ENJOY THE REST OF YOUR DAY !!!" << endl;
       
    return 0;
