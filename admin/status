@@ -21,12 +21,12 @@
 ./Coherent/EventGen/COHKinematicsGenerator.cxx
 ./Coherent/EventGen/COHPrimaryLeptonGenerator.cxx
 ./Coherent/XSection/ARConstants.cxx                              Added to unit-test
-./Coherent/XSection/AREikonalSolution.cxx                        Added to unit-test *** See issue 1 in admin/issues for additional information
+./Coherent/XSection/AREikonalSolution.cxx                        Added to unit-test *** See issue 1 in admin/issues 
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to unit-test
 ./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
 ./Coherent/XSection/ARWavefunction.cxx                           Added to unit test
-./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit test
-./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test
+./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit test 
+./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test *** see issue 2 in admin/issues
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx
 ./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx
 ./Coherent/XSection/CEvNSXSec.cxx
@@ -34,7 +34,7 @@
 ./Coherent/XSection/COHXSecAR.cxx
 ./Coherent/XSection/NuclDensityMomentIntegrand.cxx
 ./Coherent/XSection/PattonCEvNSPXSec.cxx
-./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                   Added to unit-test
+./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                     Added to unit-test *** see issue 2 in admin/issues
 ./Common/HadronicSystemGenerator.cxx
 ./Common/InitialStateAppender.cxx
 ./Common/KineGeneratorWithCache.cxx
