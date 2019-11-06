@@ -26,6 +26,7 @@
 #include "Physics/Coherent/XSection/AlvarezRusoCOHPiPDXSec.h"
 #include "Physics/Coherent/XSection/AREikonalSolution.h"
 
+
 #include "SynthEvent.h"
 
 using namespace genie;
@@ -75,7 +76,6 @@ void alvarezrusocohpipxsec_ut()
 #else
   BOOST_CHECK_CLOSE(xsec,coh_xsec::alvarezrusocohpipxsec::xsec,tolerance_in_percent );
 #endif
-
 
 #ifdef PRINTOUT
    UpdateBenchmark::Instance()->Write( "} // end namespace alvarezrusocohpipxsec" );

@@ -36,17 +36,18 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts2->add( BOOST_TEST_CASE( &areikonalsolution_ut ) );
    ts2->add( BOOST_TEST_CASE( &arwavefunction_ut ) );
    ts2->add( BOOST_TEST_CASE( &alvarezrusocohpipdxsec_ut ) );
+   ts2->add( BOOST_TEST_CASE( &alvarezrusocohpipxsec_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("StrangeXSec");
    ts3->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number
                                                   // needs further understanding...
 
    auto ts4 = BOOST_TEST_SUITE("ReWei");
-   ts4->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
-   ts4->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
-   ts4->add( BOOST_TEST_CASE( &rw_XSecCCRES_ut ) );
-   ts4->add( BOOST_TEST_CASE( &rw_XSecNCRES_ut ) );
-   ts4->add( BOOST_TEST_CASE( &rw_XSecCOH_ut ) );
+   //ts4->add( BOOST_TEST_CASE( &rw_XSecCCQE_ut ) );
+   //ts4->add( BOOST_TEST_CASE( &rw_XSecNCEL_ut ) );
+   //ts4->add( BOOST_TEST_CASE( &rw_XSecCCRES_ut ) );
+   //ts4->add( BOOST_TEST_CASE( &rw_XSecNCRES_ut ) );
+   //ts4->add( BOOST_TEST_CASE( &rw_XSecCOH_ut ) );
 
    // add other tests suites here...
 

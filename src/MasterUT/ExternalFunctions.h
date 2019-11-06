@@ -23,6 +23,7 @@ extern void arsamplednucleus_ut();
 extern void areikonalsolution_ut();
 extern void arwavefunction_ut();
 extern void alvarezrusocohpipdxsec_ut();
+extern void alvarezrusocohpipxsec_ut();
 // strange
 extern void singlekaon_ut();
 
