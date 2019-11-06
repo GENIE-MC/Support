@@ -157,14 +157,14 @@
 ./QuasiElastic/EventGen/QELPrimaryLeptonGenerator.cxx
 ./QuasiElastic/XSection/AhrensNCELPXSec.cxx                                 added to unit-test
 ./QuasiElastic/XSection/AxialFormFactor.cxx
-./QuasiElastic/XSection/AxialFormFactorModelI.cxx
+./QuasiElastic/XSection/AxialFormFactorModelI.cxx                           This is an abstract base class; not in unit tests
 ./QuasiElastic/XSection/BBA03ELFormFactorsModel.cxx                         added to unit-test
 ./QuasiElastic/XSection/BBA05ELFormFactorsModel.cxx                         added to unit-test
 ./QuasiElastic/XSection/BBA07ELFormFactorsModel.cxx                         added to unit-test
 ./QuasiElastic/XSection/DipoleAxialFormFactorModel.cxx                      added to unit-test
 ./QuasiElastic/XSection/DipoleELFormFactorsModel.cxx                        added to unit-test
 ./QuasiElastic/XSection/ELFormFactors.cxx
-./QuasiElastic/XSection/ELFormFactorsModelI.cxx
+./QuasiElastic/XSection/ELFormFactorsModelI.cxx                             This is an abstract base class; not in unit tests
 ./QuasiElastic/XSection/KuzminNaumov2016AxialFormFactorModel.cxx
 ./QuasiElastic/XSection/LwlynSmithFF.cxx
 ./QuasiElastic/XSection/LwlynSmithFFCC.cxx                                   added to unit-test
@@ -175,7 +175,7 @@
 ./QuasiElastic/XSection/NievesQELCCPXSec.cxx                                 added to unit-test
 ./QuasiElastic/XSection/NievesQELException.cxx
 ./QuasiElastic/XSection/QELFormFactors.cxx
-./QuasiElastic/XSection/QELFormFactorsModelI.cxx
+./QuasiElastic/XSection/QELFormFactorsModelI.cxx                             This is an abstract base class; not in unit tests
 ./QuasiElastic/XSection/QELUtils.cxx
 ./QuasiElastic/XSection/QELXSec.cxx
 ./QuasiElastic/XSection/RosenbluthPXSec.cxx
