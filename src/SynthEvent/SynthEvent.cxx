@@ -11,9 +11,11 @@ SynthEvent::SynthEvent()
    //
    InitialState init_state( 6, 12, 14 );
    TLorentzVector nu_p4(0., 0., 3., 3.); //px, py, pz, E in GeV
+   
    init_state.SetProbeP4( nu_p4 );
    init_state.TgtPtr()->SetHitNucPdg( 2112 );
-      
+
+   
    this->AttachSummary( new Interaction( init_state, ProcessInfo( kScQuasiElastic, kIntWeakCC ) ) );
    this->Summary()->KinePtr()->Setx( 0.538, true );
    this->Summary()->KinePtr()->Sety( 0.042, true );
@@ -26,37 +28,37 @@ SynthEvent::SynthEvent()
                                                         // and this is what the RW does !!!
       
 //
-// add probe and target to the event; probe is mandatory, otherwise the RW will crash
+/* add probe and target to the event; probe is mandatory, otherwise the RW will crash
 // 
    this->AddParticle( 14,         kIStInitialState,        -1, -1,  4,  4,  0.,     0.,     3.,     3.,   
                              0.982484, 0.250677, -0.742634, 0.000000 );
    this->AddParticle( 1000060120, kIStInitialState,        -1, -1,  2,  3,  0.,     0.,     0.,    11.175, 
                              0., 0., 0., 0. );
 
-/* in this case no need to have all secondaries in the event record, just overall kinenatic and probe/target would be enough
+   // in this case no need to have all secondaries in the event record, just overall kinenatic and probe/target would be enough
 
-   synth_event->AddParticle( 2112,       kIStNucleonTarget,        1, -1,  5,  5, -0.157, -0.071,  0.149,  0.918, 
+   this->AddParticle( 2112,       kIStNucleonTarget,        1, -1,  5,  5, -0.157, -0.071,  0.149,  0.918, 
                              0.982484, 0.250677, -0.742634, 0.000000 );
-   synth_event->AddParticle( 1000060110, kIStIntermediateState,    1, -1, 11, 11,  0.157,  0.071, -0.149, 10.257, 
+   this->AddParticle( 1000060110, kIStIntermediateState,    1, -1, 11, 11,  0.157,  0.071, -0.149, 10.257, 
                              0., 0., 0., 0. );
-   synth_event->AddParticle( 13,         kIStStableFinalState,     0, -1, -1, -1, -0.202,  0.241,  2.871,  2.890, 
+   this->AddParticle( 13,         kIStStableFinalState,     0, -1, -1, -1, -0.202,  0.241,  2.871,  2.890, 
                              0.982484, 0.250677, -0.742634, 0.000000 );
-   synth_event->AddParticle( 2212,       kIStHadronInTheNucleus,   2, -1,  6,  6,  0.045, -0.312,  0.277,  1.028, 
+   this->AddParticle( 2212,       kIStHadronInTheNucleus,   2, -1,  6,  6,  0.045, -0.312,  0.277,  1.028, 
                              0.982484, 0.250677, -0.742634, 0.000000 );
-   synth_event->AddParticle( 2000000300, kIStNucleonClusterTarget, 5, -1,  7, 10,  0.045, -0.312,  0.277,  1.028, 
+   this->AddParticle( 2000000300, kIStNucleonClusterTarget, 5, -1,  7, 10,  0.045, -0.312,  0.277,  1.028, 
                              1.041835, -0.157858, -0.379211, 0.000000 );
-   synth_event->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1, -0.074, -0.185,  0.238,  0.988, 
+   this->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1, -0.074, -0.185,  0.238,  0.988, 
                              1.041835, -0.157858, -0.379211, 0.000000 );
-   synth_event->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1,  0.085,  0.100, -0.023,  0.948, 
+   this->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1,  0.085,  0.100, -0.023,  0.948, 
                              1.041835, -0.157858, -0.379211, 0.000000 );
-   synth_event->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1, -0.072, -0.094, -0.048,  0.947, 
+   this->AddParticle( 2212,       kIStStableFinalState,     6, -1, -1, -1, -0.072, -0.094, -0.048,  0.947, 
                              1.041835, -0.157858, -0.379211, 0.000000 );
-   synth_event->AddParticle( 2112,       kIStStableFinalState,     6, -1, -1, -1,  0.107, -0.133,  0.110,  0.961, 
+   this->AddParticle( 2112,       kIStStableFinalState,     6, -1, -1, -1,  0.107, -0.133,  0.110,  0.961, 
                              1.041835, -0.157858, -0.379211, 0.000000 );
-   synth_event->AddParticle( 2000000002, kIStFinalStateNuclearRemnant, 3, -1, -1, -1, 0.157149,0.071223,-0.148711,7.440439,
+   this->AddParticle( 2000000002, kIStFinalStateNuclearRemnant, 3, -1, -1, -1, 0.157149,0.071223,-0.148711,7.440439,
                              0., 0., 0., 0. );
-   synth_event->SetXSec( 1.40526805040119e-10 );
-   synth_event->SetDiffXSec( 4.1199820102841004e-11, kPSQ2fE );
+   this->SetXSec( 1.40526805040119e-10 );
+   this->SetDiffXSec( 4.1199820102841004e-11, kPSQ2fE );
 */
 
 }
@@ -161,7 +163,12 @@ SynthEventCOH::SynthEventCOH()
    //
    InitialState init_state( 6, 12, 14 ); // InitialState istate( 1000060120, 14 ); 
    TLorentzVector nu_p4(0., 0., 3., 3.); //px, py, pz, E in GeV
+   TLorentzVector lep_p4(0.170,0.134,0.738,0.769);
+   TLorentzVector pi_p4( -0.169,-0.045,2.220,2.231 );
+
    init_state.SetProbeP4( nu_p4 );
+   init_state.SetProbeE(3.0);
+
    
    // NOTE: do NOT set hit nucleon as XSecCOH will bail on it ---> init_state.TgtPtr()->SetHitNucPdg( 2112 );
       
@@ -172,6 +179,10 @@ SynthEventCOH::SynthEventCOH()
    this->Summary()->KinePtr()->SetQ2( 0.186, true );
    this->Summary()->KinePtr()->SetW( 0.140, true );
    this->Summary()->KinePtr()->SetKV( kKVSelt, 0.010 );
+
+   this->Summary()->KinePtr()->SetFSLeptonP4(lep_p4);
+   this->Summary()->KinePtr()->SetHadSystP4(pi_p4);
+
    this->Summary()->KinePtr()->UseSelectedKinematics(); // this is a must if kine vars are marked as "selected" 
                                                                // which is typically the case when an event is generated by the EVTdriver;
 					                       // if not, the returned xsec=0
