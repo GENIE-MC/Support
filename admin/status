@@ -167,15 +167,15 @@
 ./QuasiElastic/XSection/ELFormFactorsModelI.cxx                             This is an abstract base class; not in unit tests
 ./QuasiElastic/XSection/KuzminNaumov2016AxialFormFactorModel.cxx
 ./QuasiElastic/XSection/LwlynSmithFF.cxx
-./QuasiElastic/XSection/LwlynSmithFFCC.cxx                                   added to unit-test
-./QuasiElastic/XSection/LwlynSmithFFDeltaS.cxx
-./QuasiElastic/XSection/LwlynSmithFFNC.cxx                                   added to unit-test
-./QuasiElastic/XSection/LwlynSmithQELCCPXSec.cxx                             added to unit-test
+./QuasiElastic/XSection/LwlynSmithFFCC.cxx                                  added to unit-test
+./QuasiElastic/XSection/LwlynSmithFFDeltaS.cxx                              added to unit-test
+./QuasiElastic/XSection/LwlynSmithFFNC.cxx                                  added to unit-test
+./QuasiElastic/XSection/LwlynSmithQELCCPXSec.cxx                            added to unit-test
 ./QuasiElastic/XSection/NewQELXSec.cxx
-./QuasiElastic/XSection/NievesQELCCPXSec.cxx                                 added to unit-test
+./QuasiElastic/XSection/NievesQELCCPXSec.cxx                                added to unit-test
 ./QuasiElastic/XSection/NievesQELException.cxx
 ./QuasiElastic/XSection/QELFormFactors.cxx
-./QuasiElastic/XSection/QELFormFactorsModelI.cxx                             This is an abstract base class; not in unit tests
+./QuasiElastic/XSection/QELFormFactorsModelI.cxx                            This is an abstract base class; not in unit tests
 ./QuasiElastic/XSection/QELUtils.cxx
 ./QuasiElastic/XSection/QELXSec.cxx
 ./QuasiElastic/XSection/RosenbluthPXSec.cxx
