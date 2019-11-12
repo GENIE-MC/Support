@@ -206,6 +206,7 @@ static const double DXSec_NC_Tau_AntiNu_Garcia = 0.000104381;
  
 namespace alvarezrusocohpipxsec {
 static const double xsec = 4.67272e-13;
+static const double arintegral = 4.48098e-14;
 } // end namespace alvarezrusocohpipxsec
  
 } // end namespace coh_xsec

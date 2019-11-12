@@ -49,24 +49,13 @@ void alvarezrusocohpipxsec_ut()
     }
    
   EventRecord* synth_event = new SynthEventCOH();
-  //Interaction* cohint=synth_event->Summary();
-
-
   AlvarezRusoCOHPiPXSec* ar = new AlvarezRusoCOHPiPXSec();
-
-  BOOST_CHECK( ar != 0 );
-
   ar->Configure("Default" );
-   
-  BOOST_CHECK( ar->ValidProcess( synth_event->Summary() ));
-
-  double xsec = ar->XSec( synth_event->Summary() , kPSElOlOpifE );
-  BOOST_REQUIRE_NE( xsec, 0. );
-
 #ifdef PRINTOUT
   UpdateBenchmark::Instance()->Write( "namespace alvarezrusocohpipxsec {" );
 #endif
-   
+
+  double xsec = ar->XSec( synth_event->Summary() , kPSElOlOpifE );
 #ifdef PRINTOUT
   os.clear();
   os.str("");
@@ -75,6 +64,24 @@ void alvarezrusocohpipxsec_ut()
   UpdateBenchmark::Instance()->Write( s );
 #else
   BOOST_CHECK_CLOSE(xsec,coh_xsec::alvarezrusocohpipxsec::xsec,tolerance_in_percent );
+#endif
+
+   Algorithm* xsec_int = (Algorithm*)(ar->SubAlg("XSec-Integrator"));
+   Registry rg_xsec_int_modi( xsec_int->GetConfig() );
+   string gsl_min_eval = "gsl-min-eval";
+   string gsl_max_eval = "gsl-max-eval";
+   rg_xsec_int_modi.Set( gsl_min_eval, 1 );
+   rg_xsec_int_modi.Set( gsl_max_eval, 10 );
+   xsec_int->Configure( rg_xsec_int_modi );
+   double arintegral = ar->Integral( synth_event->Summary() );
+#ifdef PRINTOUT
+   os.clear();
+   os.str("");
+   os << arintegral;
+   s = "static const double arintegral = " + os.str() + ";" ;
+   UpdateBenchmark::Instance()->Write( s );
+#else
+   BOOST_CHECK_CLOSE( arintegral,  coh_xsec::alvarezrusocohpipxsec::arintegral, tolerance_in_percent );
 #endif
 
 #ifdef PRINTOUT

@@ -321,7 +321,6 @@ void alvarezrusocohpipdxsec_ut()
   BOOST_CHECK_CLOSE(valdbl,coh_xsec::alvarezrusocohpipdxsec::DXSec_NC_Tau_AntiNu_Garcia,tolerance_in_percent );
 #endif
 
-
 #ifdef PRINTOUT
    UpdateBenchmark::Instance()->Write( "} // end namespace alvarezrusocohpipdxsec" );
 #endif
