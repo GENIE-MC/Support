@@ -89,6 +89,7 @@ namespace coh_xsec {
 namespace reinsehgal {
 static const double xsec_default = 1.74145e-11;
 static const double xsec_use_modi_pcac_false = 2.00335e-11;
+static const double rsintegral = 7.94618e-12;
 } // end namespace reinsehgal
  
 namespace arconstant {
