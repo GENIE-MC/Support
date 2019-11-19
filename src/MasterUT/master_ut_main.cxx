@@ -40,6 +40,7 @@ int main( int argc, char *argv[] )
    Messenger::Instance()->SetPrioritiesFromXmlFile("Messenger_whisper.xml");
    Messenger::Instance()->SetPriorityLevel( "RunOpt", pFATAL );
    Messenger::Instance()->SetPriorityLevel( "TuneId", pFATAL );
+   Messenger::Instance()->SetPriorityLevel( "GSLXSecFunc", pFATAL );
    
 /* this is an old(er) approach, before RunOpt::SetTuneName method was available
    RunOpt::Instance()->ReadFromCommandLine(0,0);

@@ -24,6 +24,7 @@ extern void areikonalsolution_ut();
 extern void arwavefunction_ut();
 extern void alvarezrusocohpipdxsec_ut();
 extern void alvarezrusocohpipxsec_ut();
+extern void bergersehgalcohpipxsec_ut();
 // strange
 extern void singlekaon_ut();
 
