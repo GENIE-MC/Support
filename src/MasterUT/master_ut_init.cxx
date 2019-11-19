@@ -38,6 +38,7 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts2->add( BOOST_TEST_CASE( &alvarezrusocohpipdxsec_ut ) );
    ts2->add( BOOST_TEST_CASE( &alvarezrusocohpipxsec_ut ) );
    ts2->add( BOOST_TEST_CASE( &bergersehgalcohpipxsec_ut ) );
+   ts2->add( BOOST_TEST_CASE( &bergersehgalfmcohpipxsec_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("StrangeXSec");
    ts3->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number

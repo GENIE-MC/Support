@@ -215,6 +215,12 @@ static const double xsec = 3.97532e-16;
 static const double bsintegral = 5.42944e-12;
 } // end namespace bergersehgalcohpipxsec
  
+namespace bergersehgalfmcohpipxsec {
+static const bool valid = 1;
+static const double xsec = 1.07763e-10;
+static const double bsintegral = 5.36257e-12;
+} // end namespace bergersehgalfmcohpipxsec
+ 
 } // end namespace coh_xsec
  
 #endif

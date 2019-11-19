@@ -31,6 +31,7 @@ extern void arwavefunction_ut();
 extern void alvarezrusocohpipdxsec_ut();
 extern void alvarezrusocohpipxsec_ut();
 extern void bergersehgalcohpipxsec_ut();
+extern void bergersehgalfmcohpipxsec_ut();
 // strange domain
 //extern void singlekaon_ut();
 
@@ -104,6 +105,8 @@ int main( /* int argc, char* argv[] */ )
    alvarezrusocohpipxsec_ut();
    inst->Write( " " );   
    bergersehgalcohpipxsec_ut();
+   inst->Write( " " );   
+   bergersehgalfmcohpipxsec_ut();
 
    inst->Write( " " );
    inst->Write( "} // end namespace coh_xsec" );
