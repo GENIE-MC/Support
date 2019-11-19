@@ -77,7 +77,7 @@ void bergersehgalfmcohpipxsec_ut()
    string gsl_min_eval = "gsl-min-eval";
    string gsl_max_eval = "gsl-max-eval";
    rg_xsec_int_modi.Set( gsl_min_eval, 1 );
-   rg_xsec_int_modi.Set( gsl_max_eval, 10 );
+   rg_xsec_int_modi.Set( gsl_max_eval, 2 );
    xsec_int->Configure( rg_xsec_int_modi );
    double bsintegral = bs->Integral( synth_event->Summary() );
 #ifdef PRINTOUT
