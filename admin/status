@@ -27,8 +27,8 @@
 ./Coherent/XSection/ARWavefunction.cxx                           Added to unit test
 ./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit test 
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test
-./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx
-./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx
+./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx               Added to unit test
+./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx             In progress (WG)
 ./Coherent/XSection/CEvNSXSec.cxx
 ./Coherent/XSection/COHXSec.cxx
 ./Coherent/XSection/COHXSecAR.cxx
