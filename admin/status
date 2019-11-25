@@ -29,9 +29,9 @@
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx               Added to unit test
 ./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx             Added to unit test
-./Coherent/XSection/CEvNSXSec.cxx
-./Coherent/XSection/COHXSec.cxx
-./Coherent/XSection/COHXSecAR.cxx
+./Coherent/XSection/CEvNSXSec.cxx                                In progress (WG)
+./Coherent/XSection/COHXSec.cxx                                  In progress (WG)
+./Coherent/XSection/COHXSecAR.cxx                                In progress (WG)
 ./Coherent/XSection/NuclDensityMomentIntegrand.cxx
 ./Coherent/XSection/PattonCEvNSPXSec.cxx
 ./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                     Added to unit-test
