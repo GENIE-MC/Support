@@ -26,6 +26,7 @@ extern void alvarezrusocohpipdxsec_ut();
 extern void alvarezrusocohpipxsec_ut();
 extern void bergersehgalcohpipxsec_ut();
 extern void bergersehgalfmcohpipxsec_ut();
+extern void nucldensitymomentintegrand_ut();
 // strange
 extern void singlekaon_ut();
 

@@ -41,8 +41,6 @@ purge: FORCE
 
 clean: FORCE
 	$(RM) *.o *~ core 
-	# $(RM) lwlyn_nieves_ut
-
 
 FORCE:
 

@@ -221,6 +221,11 @@ static const double xsec = 1.07763e-10;
 static const double bsintegral = 5.36257e-12;
 } // end namespace bergersehgalfmcohpipxsec
  
+namespace nucldensitymomentintegrand {
+static const int NDim = 1;
+static const double DoEval = 7.78999e-05;
+} // end namespace nucldensitymomentintegrand
+ 
 } // end namespace coh_xsec
  
 #endif
