@@ -24,15 +24,15 @@
 ./Coherent/XSection/AREikonalSolution.cxx                        Added to unit-test *** See issue 1 in admin/issues 
 ./Coherent/XSection/ARSampledNucleus.cxx                         Added to unit-test
 ./Coherent/XSection/ARWFSolution.cxx                             This is an abstract base class, not included in unit-test
-./Coherent/XSection/ARWavefunction.cxx                           Added to unit test
-./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit test 
+./Coherent/XSection/ARWavefunction.cxx                           Added to unit-test
+./Coherent/XSection/AlvarezRusoCOHPiPDXSec.cxx                   Added to unit-test 
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test
-./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx               Added to unit test
-./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx             Added to unit test
-./Coherent/XSection/CEvNSXSec.cxx                                XSecIntegrator interface: Validated through model Integrate unit tests
-./Coherent/XSection/COHXSec.cxx                                  XSecIntegrator interface: Validated through model Integrate unit tests
-./Coherent/XSection/COHXSecAR.cxx                                XSecIntegrator interface: Validated through model Integrate unit tests
-./Coherent/XSection/NuclDensityMomentIntegrand.cxx               in progress (WG)
+./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx               Added to unit-test
+./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx             Added to unit-test
+./Coherent/XSection/CEvNSXSec.cxx                                XSecIntegrator interface: Validated through model Integrate unit-tests
+./Coherent/XSection/COHXSec.cxx                                  XSecIntegrator interface: Validated through model Integrate unit-tests
+./Coherent/XSection/COHXSecAR.cxx                                XSecIntegrator interface: Validated through model Integrate unit-tests
+./Coherent/XSection/NuclDensityMomentIntegrand.cxx               Added to unit-test *** Function Clone not tested ***
 ./Coherent/XSection/PattonCEvNSPXSec.cxx                         in progress (WG)
 ./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                     Added to unit-test
 ./Common/HadronicSystemGenerator.cxx
