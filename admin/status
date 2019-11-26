@@ -29,11 +29,11 @@
 ./Coherent/XSection/AlvarezRusoCOHPiPXSec.cxx                    Added to unit test
 ./Coherent/XSection/BergerSehgalCOHPiPXSec2015.cxx               Added to unit test
 ./Coherent/XSection/BergerSehgalFMCOHPiPXSec2015.cxx             Added to unit test
-./Coherent/XSection/CEvNSXSec.cxx                                In progress (WG)
-./Coherent/XSection/COHXSec.cxx                                  In progress (WG)
-./Coherent/XSection/COHXSecAR.cxx                                In progress (WG)
-./Coherent/XSection/NuclDensityMomentIntegrand.cxx
-./Coherent/XSection/PattonCEvNSPXSec.cxx
+./Coherent/XSection/CEvNSXSec.cxx                                XSecIntegrator interface: Validated through model Integrate unit tests
+./Coherent/XSection/COHXSec.cxx                                  XSecIntegrator interface: Validated through model Integrate unit tests
+./Coherent/XSection/COHXSecAR.cxx                                XSecIntegrator interface: Validated through model Integrate unit tests
+./Coherent/XSection/NuclDensityMomentIntegrand.cxx               in progress (WG)
+./Coherent/XSection/PattonCEvNSPXSec.cxx                         in progress (WG)
 ./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                     Added to unit-test
 ./Common/HadronicSystemGenerator.cxx
 ./Common/InitialStateAppender.cxx
