@@ -42,4 +42,16 @@ class SynthEventCOH : public genie::EventRecord
 
 };
 
+class SynthEventElastic : public genie::EventRecord
+{
+
+   public :
+   
+      // ctor & dtor
+      //
+      SynthEventElastic();
+      ~SynthEventElastic() {}
+
+};
+
 #endif

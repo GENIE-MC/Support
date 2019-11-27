@@ -28,7 +28,7 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts1->add( BOOST_TEST_CASE( &lwlyn_ff_cc_ut ) );
    ts1->add( BOOST_TEST_CASE( &lwlyn_ff_nc_ut ) );
    ts1->add( BOOST_TEST_CASE( &lwlyn_ff_deltas_ut ) );
-   
+
    auto ts2 = BOOST_TEST_SUITE("COHXSec");
    ts2->add( BOOST_TEST_CASE( &reinsehgal_ut ) );
    ts2->add( BOOST_TEST_CASE( &arconstants_ut ) );
@@ -40,6 +40,7 @@ bool init_unit_test_suite( /* int argc, char *argv[] */ )
    ts2->add( BOOST_TEST_CASE( &bergersehgalcohpipxsec_ut ) );
    ts2->add( BOOST_TEST_CASE( &bergersehgalfmcohpipxsec_ut ) );
    ts2->add( BOOST_TEST_CASE( &nucldensitymomentintegrand_ut ) );
+   ts2->add( BOOST_TEST_CASE( &pattoncevnspxsec_ut ) );
 
    auto ts3 = BOOST_TEST_SUITE("StrangeXSec");
    ts3->add( BOOST_TEST_CASE( &singlekaon_ut ) ); // produces strangely large number

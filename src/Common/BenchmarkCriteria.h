@@ -226,6 +226,12 @@ static const int NDim = 1;
 static const double DoEval = 7.78999e-05;
 } // end namespace nucldensitymomentintegrand
  
+namespace pattoncevnspxsec {
+static const bool valid = 1;
+static const double xsec = 7.58575e-11;
+static const double paintegral = 8.14829e-12;
+} // end namespace pattoncevnspxsec
+ 
 } // end namespace coh_xsec
  
 #endif
