@@ -33,7 +33,7 @@
 ./Coherent/XSection/COHXSec.cxx                                  XSecIntegrator interface: Validated through model Integrate unit-tests
 ./Coherent/XSection/COHXSecAR.cxx                                XSecIntegrator interface: Validated through model Integrate unit-tests
 ./Coherent/XSection/NuclDensityMomentIntegrand.cxx               Added to unit-test *** Function Clone not tested ***
-./Coherent/XSection/PattonCEvNSPXSec.cxx                         in progress (WG)
+./Coherent/XSection/PattonCEvNSPXSec.cxx                         Added to unit-test
 ./Coherent/XSection/ReinSehgalCOHPiPXSec.cxx                     Added to unit-test
 ./Common/HadronicSystemGenerator.cxx
 ./Common/InitialStateAppender.cxx
